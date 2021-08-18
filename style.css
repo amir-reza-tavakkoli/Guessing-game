@@ -6,7 +6,17 @@
     transition: all 0.7s ease;
     font-family: 'Roboto Condensed', sans-serif;
 }
-h1{font-size: 28px;}
+h1{font-size: 18px;}
+p{font-size: 10px;}
+@media only screen and (min-width: 400px) {
+    h1{font-size: 20px;}
+    p{font-size: 12px;}
+  }
+@media only screen and (min-width: 600px) {
+    h1{font-size: 36px;}
+    p{font-size: 18px;}
+    button{font-size: 16px !important;}
+  }
 .novisual {
     position: absolute !important;
     width: 1px !important;
