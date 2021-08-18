@@ -13,7 +13,7 @@ function start() {
 }
 
 function generate(params) {
-    // number=Math.floor((Math.random() * 90) + 10);
+    number=Math.floor((Math.random() * 90) + 10);
     // number=2;
 }
 function first() {
