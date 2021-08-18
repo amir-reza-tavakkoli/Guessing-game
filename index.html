@@ -18,10 +18,14 @@
     <div class="layer1">
         <p>Game started! Pick!</p>
         <label for="input1" class="novisual">Enter number between 10 and 100</label>
-        <input id="input1" type="text" placeholder="Between 10 and 100">
-        <button>Enter</button>
+        <input id="input1" type="tel" pattern="^[1-9][0-9]?$|^100$" placeholder="Between 10 and 100">
+        <button type="button" onclick="first()">Enter</button>
+        <p id="response"></p>
+        <p id="compare"></p>
+        <p>Chances left:<span>3</span></p>
     </div>
 </main>
-
+<div class="cong"><p>Congratulation!</p><a href="index.html">Start over</a></div>
+<div class="sorry"><p>Lost! Sorry</p><a href="index.html">Start over</a></div>
 </body>
 </html>
