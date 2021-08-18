@@ -117,7 +117,9 @@ input {
     align-items: center;
     background-color: white;
 }
-
+.cong p{
+    font-size: 12vw;
+}
 .cong a {
     text-decoration: none;
     font-size: 30px;
@@ -177,7 +179,7 @@ input {
 
 #cool {
     transform: translateX(+100%);
-    width: 100vw;
+    width: 50vw;
     height: 35px;
     background-color: yellow;
     margin-top: 10px;
