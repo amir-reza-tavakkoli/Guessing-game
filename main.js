@@ -1,6 +1,6 @@
 let number;
 let chances=3
-let c =1;
+let c =1;s=0;
 function start() {
     if(1)document.getElementsByTagName("DIV")[0].style.opacity="0";
 
@@ -14,20 +14,19 @@ function generate(params) {
     number=2;
 }
 function first() {
+    chances--;
 
-    if(chances==0){sorry()}
-    else if(chances>1){chances--;
     let guess=Number(document.getElementById('input1').value)
     compare(guess);
-    if(guess==number){congrates()}else{
+    if(guess==number){s=1;congrates();return 1;}else{
         if(c==0){document.getElementById("response").innerText="Aww missed again";}
         if(c==1){document.getElementById("response").innerText="aww missed";c=0;}
 
-    document.getElementsByTagName("span")[0].innerText=String(Number(document.getElementsByTagName("span")[0].innerText)-1)}
+ }
+ document.getElementsByTagName("span")[0].innerText=String(Number(document.getElementsByTagName("span")[0].innerText)-1)
+ if(chances==0 && s!=1){sorry();return 0;}
+}
 
-}
-else{sorry()}
-}
 function sorry() {
     document.getElementsByTagName("MAIN")[0].style.display="none"
     document.getElementsByTagName("DIV")[3].style.display="grid"
