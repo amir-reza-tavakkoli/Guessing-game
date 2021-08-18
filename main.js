@@ -4,16 +4,19 @@ let c =1;s=0;
 function start() {
     // document.getElementsByTagName("DIV")[0].style.transition= 'display 1s'
     if(1)document.getElementsByTagName("DIV")[0].style.opacity="0";
-    document.getElementsByTagName("DIV")[0].style.display="none";
+    document.getElementsByTagName("DIV")[0].style.visibility="hidden"
     generate();
     document.getElementsByClassName('layer1')[0].style.display="flex"
     document.getElementsByClassName('layer1')[0].style.opacity="1"
+
+
 }
 function generate(params) {
     number=Math.floor((Math.random() * 90) + 10);
     // number=2;
 }
 function first() {
+
     chances--;
 
     let guess=Number(document.getElementById('input1').value)
@@ -29,6 +32,7 @@ function first() {
 
 function sorry() {
     document.getElementsByTagName("MAIN")[0].style.display="none"
+    // document.getElementsByTagName("MAIN")[0].style.visibility="hidden"
     document.getElementsByTagName("DIV")[3].style.display="grid"
     document.getElementsByTagName("span")[1].innerText=String(number)
 }
@@ -45,4 +49,8 @@ function compare(x) {document.getElementById('compare').style.opacity="1";
     else if(x<number)document.getElementById('compare').innerText="Go upper"
 
 
+}
+
+function doit() {
+    document.getElementsByTagName("DIV")[0].style.display="none";
 }
