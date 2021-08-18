@@ -2,16 +2,16 @@ let number;
 let chances=3
 let c =1;s=0;
 function start() {
+    // document.getElementsByTagName("DIV")[0].style.transition= 'display 1s'
     if(1)document.getElementsByTagName("DIV")[0].style.opacity="0";
-
     document.getElementsByTagName("DIV")[0].style.display="none";
     generate();
     document.getElementsByClassName('layer1')[0].style.display="flex"
     document.getElementsByClassName('layer1')[0].style.opacity="1"
 }
 function generate(params) {
-    // number=Math.floor((Math.random() * 90) + 10);
-    number=2;
+    number=Math.floor((Math.random() * 90) + 10);
+    // number=2;
 }
 function first() {
     chances--;
@@ -30,15 +30,18 @@ function first() {
 function sorry() {
     document.getElementsByTagName("MAIN")[0].style.display="none"
     document.getElementsByTagName("DIV")[3].style.display="grid"
+    document.getElementsByTagName("span")[1].innerText=String(number)
 }
 function congrates() {
     document.getElementsByTagName("MAIN")[0].style.display="none"
     document.getElementsByTagName("*")[0].style.backgroundColor="white"
     document.getElementsByTagName("DIV")[2].style.display="grid"
+
 }
 
-function compare(x) {document.getElementById('compare').style.display="block";
-    if(x>number)document.getElementById('compare').innerText="Go lower"
+function compare(x) {document.getElementById('compare').style.opacity="1";
+    if(isNaN(x)){document.getElementById('compare').innerText="Not a number"}
+    else if(x>number)document.getElementById('compare').innerText="Go lower"
     else if(x<number)document.getElementById('compare').innerText="Go upper"
 
 
