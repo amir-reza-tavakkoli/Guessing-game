@@ -6,17 +6,36 @@
     transition: all 0.7s ease;
     font-family: 'Roboto Condensed', sans-serif;
 }
-h1{font-size: 18px;}
-p{font-size: 10px;}
+
+h1 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 10px;
+}
+
 @media only screen and (min-width: 400px) {
-    h1{font-size: 20px;}
-    p{font-size: 12px;}
-  }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
 @media only screen and (min-width: 600px) {
-    h1{font-size: 36px;}
-    p{font-size: 18px;}
-    button{font-size: 16px !important;}
-  }
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 18px;
+    }
+    button {
+        font-size: 16px !important;
+    }
+}
+
 .novisual {
     position: absolute !important;
     width: 1px !important;
@@ -38,7 +57,7 @@ p{font-size: 10px;}
 main>div>button {
     border: none;
     background-color: blueviolet;
-    width: 40px;
+    width: 45px;
     margin-top: 15px;
     height: 24px;
     color: white;
@@ -112,8 +131,11 @@ input {
     margin-left: 25%;
     align-self: center;
 }
-.cong a:active,.cong a:hover{color: black;
-background-color: white;}
+
+.cong a:active, .cong a:hover {
+    color: black;
+    background-color: white;
+}
 
 .sorry {
     display: none;
@@ -147,4 +169,33 @@ background-color: white;}
     font-size: 24px;
     border-radius: 4px;
     opacity: 0;
+}
+
+#five {
+    width: max-content;
+}
+
+#cool {
+    transform: translateX(+100%);
+    width: 100vw;
+    height: 35px;
+    background-color: yellow;
+    margin-top: 10px;
+    /* transform: translateX(100%); */
+    visibility: hidden;
+    transition: all 1s ease;
+}
+
+#cool p {
+    background-color: inherit;
+    color: black;
+    font-weight: 700;
+    margin-left: 45%;
+}
+
+dfn {
+    text-decoration: none;
+    font-style: normal;
+    color: gold;
+    font-weight: 700;
 }
