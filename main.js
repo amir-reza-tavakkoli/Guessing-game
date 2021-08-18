@@ -68,6 +68,7 @@ function changec() {
     document.getElementsByTagName("span")[0].innerText=String(5)
     document.getElementsByTagName("dfn")[0].innerText=String(5)
 
+    document.getElementById('coolp').style.visibility="visible";
     document.getElementById('cool').style.visibility="visible";
 
     document.getElementById('cool').style.transform= "translateX(-0.001%)"

@@ -189,6 +189,7 @@ input {
 }
 
 #cool p {
+    visibility: hidden;
     background-color: inherit;
     color: black;
     font-weight: 700;
