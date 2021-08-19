@@ -61,17 +61,20 @@ function doit() {
     document.getElementsByTagName("DIV")[0].style.display="none";
 }
 
-function changec() {
-    chances=5;
+function changec(xxx) {
+    chances=xxx;
     document.getElementById("cool").style.transition = "all 1s";
     document.getElementById('five').style.display="none";
-    document.getElementsByTagName("span")[0].innerText=String(5)
-    document.getElementsByTagName("dfn")[0].innerText=String(5)
-
+    document.getElementsByTagName("span")[0].innerText=String(xxx)
+    document.getElementsByTagName("dfn")[0].innerText=String(xxx)
+if(xxx==6){start();return 1;}
+if(xxx=5){    document.getElementById('xxx').style.display="none";}
     document.getElementById('coolp').style.visibility="visible";
     document.getElementById('cool').style.visibility="visible";
 
     document.getElementById('cool').style.transform= "translateX(-0.001%)"
+
+
     // document.getElementById("cool").style.transform = "rotate(7deg)";
 
     setTimeout(function name() {

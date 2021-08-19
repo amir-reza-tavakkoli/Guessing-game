@@ -14,17 +14,18 @@
         <main>
             <div class="layer0">
                 <h1>Welcome to number guessing game</h1>
-                <p>Pick a number between 10 and 100 and hit the start button</p>
+                <p>Pick a numbser between 10 and 100 and hit the start button</p>
                 <p>you have
                     <dfn>3</dfn> chances!
                 </p>
                 <button type="button" onclick="start()">start</button>
-                <button type="button" onclick="changec()" id="five">make it 5 chances</button>
+                <button type="button" onclick="changec(5)" id="five">make it 5 chances</button>
+                <button type="button" onclick="changec(6)" id="xxx"> PvP</button>
             </div>
             <div class="layer1">
                 <p>Game started! Pick!</p>
                 <label for="input1" class="novisual">Enter number between 10 and 100</label>
-                <input
+                <input maxlength="3"
                     id="input1"
                     type="tel"
                     pattern="^[1-9][0-9]?$|^100$"
